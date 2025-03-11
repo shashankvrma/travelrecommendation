@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shashank Travels</title>
+    <link rel="stylesheet" href="travel_recommendation.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<nav>
+
+    <a href="home.html" class="logo">TravelRec</a>
+
+    <!-- Menu links -->
+    <div class="menu">
+        <a href="home.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </div>
+
+    <!-- Search bar section -->
+    <div class="search-container">
+        <i class="fa fa-search search-icon"></i>
+        <input type="text" id="search" placeholder="Search recommendations...">
+        <button onclick="searchFunction()">Search</button>
+        <button class="reset-button" onclick="resetSearch()">Reset</button>
+    </div>
+</nav>
+
+<script>
+    // Function for search button (can be modified with actual search logic)
+    function searchFunction() {
+        const query = document.getElementById("search").value;
+        alert("Searching for: " + query);
+        // Here, you can implement your search logic
+    }
+
+    // Function to reset the search bar
+    function resetSearch() {
+        document.getElementById("search").value = '';
+    }
+</script>
+
+</body>
+</html>
