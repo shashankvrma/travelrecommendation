@@ -55,16 +55,10 @@ body {
             background-color: white;
         }
 
-        .search-icon {
-            float: right;
-            position: absolute;
-            right: 40px;
-            color: #030303;
-            font-size: 16px; /* Adjust icon size */
-            pointer-events: none; /* So the icon doesn't interfere with text input */
-        }
+        
 
         .search-container input[type="text"] {
+            
             padding: 8px 10px;
             width: 250px;
             border-radius: 25px;
@@ -72,6 +66,7 @@ body {
             outline: none;
             font-size: 14px;
             margin-right: 10px;
+           
         }
 
         .search-container button {
@@ -79,8 +74,9 @@ body {
             background-color: #4CAF50;
             color: white;
             border: none;
-            border-radius: 25px;
+            border-radius: 5px;
             cursor: pointer;
+            margin-left: 5px;
         }
 
         .search-container button:hover {
